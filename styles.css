@@ -1,18 +1,49 @@
+@font-face {
+  font-family: 'norsebold';
+  src: url('norse-bold-webfont.woff2') format('woff2'),
+    url('norse-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
   --sidebar-width: min(700px, 30%);
 }
 
+.flex {
+  display: flex;
+}
+
 body {
+  font-family: sans-serifz;
   margin: 0;
 }
 
 #sidebar {
   position: fixed;
   top: 0;
+  flex-direction: column;
+  color: white;
   background-image: url(./bg.jpg);
   background-size: cover;
   width: var(--sidebar-width);
   height: 100vh;
+}
+
+#logo {
+  font-family: norsebold;
+  background-color: rgba(0, 0, 0, 0.6);
+  max-width: 100%;
+  font-size: 4rem;
+  height: 5rem;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: auto;
+  margin-top: 25vh;
+}
+
+#logo>img {
+  max-height: 95%;
 }
 
 main {
