@@ -1,3 +1,3 @@
 # sign-up-form
 
-Sign up from to practice html form validation and styles
+Sign up form to practice html form validation and styles

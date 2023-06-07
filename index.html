@@ -12,31 +12,36 @@
 <body>
   <div id="sidebar" class="flex">
     <div id="logo" class="flex"><img src="odin-lined.png" alt="logo">ODIN</div>
-    <p>
-      Photo by <a
-        href="https://unsplash.com/@haliewestphoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Halie
-        West</a> on <a
-        href="https://unsplash.com/photos/25xggax4bSA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-    </p>
+    <div id="photo-credit" class="flex" style="justify-content: center;">
+      <p>
+        Photo by <a
+          href="https://unsplash.com/@haliewestphoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Halie
+          West</a> on <a
+          href="https://unsplash.com/photos/25xggax4bSA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+      </p>
+    </div>
   </div>
   <main>
-    <p>This is not a real online service! You know you need something like this in your life to help you realize your
-      deepest dreams. Sign up now to get started.</p>
-    <p>You know you want to.</p>
-    <form method="post">
-      <div id="form-box" class="grid">
-        <h2>Let's do this!</h2>
-        <label for="first-name">FIRST NAME<input type="text" name="firstName" id="first-name"></label>
-        <label for="last-name">LAST NAME<input type="text" name="lastName" id="last-name"></label>
-        <label for="email">EMAIL<input type="email" name="email" id="email"></label>
-        <label for="tel">PHONE NUMBER<input type="tel" name="tel" id="tel" pattern="\d+"></label>
-        <label for="password">PASSWORD<input type="password" name="password" id="password" minlength="8"></label>
-        <label for="password-confirm">CONFIRM PASSWORD<input type="password" name="passwordConfirm"
-            id="password-confirm" minlength="8"></label>
+    <div class="container-top">
+      <h1>This is not a real online service! You know you need something like this in your life to help you realize your
+        deepest dreams. Sign up now to get started.</h1>
+      <h1>You know you want to.</h1>
+    </div>
+    <form method="post" id="sign-up" class="grid">
+      <h2>Let's do this!</h2>
+      <label for="first-name">FIRST NAME<input type="text" name="firstName" id="first-name"></label>
+      <label for="last-name">LAST NAME<input type="text" name="lastName" id="last-name"></label>
+      <label for="email">EMAIL<input type="email" name="email" id="email"></label>
+      <label for="tel">PHONE NUMBER<input type="tel" name="tel" id="tel" pattern="\d+"></label>
+      <label for="password">PASSWORD<input type="password" name="password" id="password" minlength="8"></label>
+      <label for="password-confirm">CONFIRM PASSWORD<input type="password" name="passwordConfirm" id="password-confirm"
+          minlength="8"></label>
       </div>
-      <button>Create Account</button>
     </form>
-    <p>Already have an account? <a href="">Log in</a></p>
+    <div class="container-bot">
+      <button form="sign-up">Create Account</button>
+      <p>Already have an account? <a href="">Log in</a></p>
+    </div>
   </main>
 </body>
 

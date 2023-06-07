@@ -24,6 +24,7 @@
 body {
   font-family: sans-serif;
   margin: 0;
+  background-color: #f9fafb;
 }
 
 #sidebar {
@@ -41,8 +42,8 @@ body {
   font-family: norsebold;
   background-color: rgba(0, 0, 0, 0.6);
   max-width: 100%;
-  font-size: 4rem;
-  height: 5rem;
+  font-size: 6rem;
+  height: 9rem;
   justify-content: center;
   align-items: center;
   margin-bottom: auto;
@@ -53,22 +54,37 @@ body {
   max-height: 95%;
 }
 
+#photo-credit a,
+#photo-credit a:visited,
+#photo-credit a:active {
+  color: inherit;
+}
+
 main {
   margin-left: var(--sidebar-width);
-  background-color: rgb(185, 185, 185);
 }
 
-#form-box {
+.container-top {
+  margin: 3em;
+  margin-top: 5em;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+#sign-up {
   background-color: white;
   padding: 2rem 4rem;
+  box-shadow: 0 0 50px 3px rgb(135, 135, 135);
 }
 
-#form-box>h2 {
+#sign-up>h2 {
   grid-column: span 2;
   margin: 0;
 }
 
-#form-box>label {
+#sign-up>label {
   display: flex;
   flex-direction: column;
   width: 300px;
@@ -89,4 +105,24 @@ input:invalid {
 
 input:invalid:focus {
   box-shadow: 0 0 10px 2px #cf6363;
+}
+
+.container-bot {
+  margin-left: 3em;
+  margin-top: 2em;
+}
+
+button {
+  background-color: #596d48;
+  border-radius: 5px;
+  border: #596d48;
+  padding: 0.75em 3em;
+  font-size: 1rem;
+  color: white;
+}
+
+main a {
+  text-decoration: none;
+  color: #596d48;
+  font-weight: 800;
 }
