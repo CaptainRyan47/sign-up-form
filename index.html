@@ -24,15 +24,15 @@
       deepest dreams. Sign up now to get started.</p>
     <p>You know you want to.</p>
     <form method="post">
-      <div id="form-box">
+      <div id="form-box" class="grid">
         <h2>Let's do this!</h2>
-        <label for="first-name">First name: <input type="text" name="firstName" id="first-name"></label>
-        <label for="last-name">Last name: <input type="text" name="lastName" id="last-name"></label>
-        <label for="email">Email: <input type="email" name="email" id="email"></label>
-        <label for="tel">Phone number: <input type="tel" name="tel" id="tel"></label>
-        <label for="password">Password: <input type="password" name="password" id="password"></label>
-        <label for="password-confirm">Confirm Password: <input type="password" name="passwordConfirm"
-            id="password-confirm"></label>
+        <label for="first-name">FIRST NAME<input type="text" name="firstName" id="first-name"></label>
+        <label for="last-name">LAST NAME<input type="text" name="lastName" id="last-name"></label>
+        <label for="email">EMAIL<input type="email" name="email" id="email"></label>
+        <label for="tel">PHONE NUMBER<input type="tel" name="tel" id="tel" pattern="\d+"></label>
+        <label for="password">PASSWORD<input type="password" name="password" id="password" minlength="8"></label>
+        <label for="password-confirm">CONFIRM PASSWORD<input type="password" name="passwordConfirm"
+            id="password-confirm" minlength="8"></label>
       </div>
       <button>Create Account</button>
     </form>

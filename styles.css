@@ -12,10 +12,17 @@
 
 .flex {
   display: flex;
+  gap: 1rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
 }
 
 body {
-  font-family: sans-serifz;
+  font-family: sans-serif;
   margin: 0;
 }
 
@@ -53,5 +60,33 @@ main {
 
 #form-box {
   background-color: white;
-  padding: 10px;
+  padding: 2rem 4rem;
+}
+
+#form-box>h2 {
+  grid-column: span 2;
+  margin: 0;
+}
+
+#form-box>label {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+input {
+  outline: none;
+}
+
+input:focus {
+  border-color: rgba(100, 217, 100, 0.524);
+  box-shadow: 0 0 3px 3px rgba(100, 217, 100, 0.524);
+}
+
+input:invalid {
+  border-color: #cf6363;
+}
+
+input:invalid:focus {
+  box-shadow: 0 0 10px 2px #cf6363;
 }
